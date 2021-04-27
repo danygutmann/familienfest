@@ -630,8 +630,3 @@ C:\GIT\familienfest\repro\familienfest\obj\Release\net5.0\familienfest.csproj.Co
 C:\GIT\familienfest\repro\familienfest\obj\Release\net5.0\familienfest.dll
 C:\GIT\familienfest\repro\familienfest\obj\Release\net5.0\ref\familienfest.dll
 C:\GIT\familienfest\repro\familienfest\obj\Release\net5.0\familienfest.pdb
-C:\GIT\familienfest\repro\familienfest\bin\Release\net5.0\release\web.config
-C:\GIT\familienfest\repro\familienfest\bin\Release\net5.0\docs\sample-data\weather.json
-C:\GIT\familienfest\repro\familienfest\bin\Release\net5.0\docs\_framework\blazor.boot.json
-C:\GIT\familienfest\repro\familienfest\bin\Release\net5.0\release\wwwroot\sample-data\weather.json
-C:\GIT\familienfest\repro\familienfest\bin\Release\net5.0\release\wwwroot\_framework\blazor.boot.json
