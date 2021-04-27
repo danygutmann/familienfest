@@ -13,6 +13,11 @@ C:\GIT\familienfest\repro\familienfest\release\wwwroot\css\open-iconic\README.md
 C:\GIT\familienfest\repro\familienfest\release\wwwroot\favicon.ico
 C:\GIT\familienfest\repro\familienfest\release\wwwroot\index.html
 C:\GIT\familienfest\repro\familienfest\release\wwwroot\sample-data\weather.json
+C:\GIT\familienfest\repro\familienfest\release\wwwroot\_framework\release\web.config
+C:\GIT\familienfest\repro\familienfest\release\wwwroot\_framework\docs\sample-data\weather.json
+C:\GIT\familienfest\repro\familienfest\release\wwwroot\_framework\docs\_framework\blazor.boot.json
+C:\GIT\familienfest\repro\familienfest\release\wwwroot\_framework\release\wwwroot\sample-data\weather.json
+C:\GIT\familienfest\repro\familienfest\release\wwwroot\_framework\release\wwwroot\_framework\blazor.boot.json
 C:\GIT\familienfest\repro\familienfest\release\wwwroot\_framework\dotnet.timezones.blat
 C:\GIT\familienfest\repro\familienfest\release\wwwroot\_framework\dotnet.wasm
 C:\GIT\familienfest\repro\familienfest\release\wwwroot\_framework\icudt.dat
@@ -73,6 +78,11 @@ C:\GIT\familienfest\repro\familienfest\release\wwwroot\css\open-iconic\README.md
 C:\GIT\familienfest\repro\familienfest\release\wwwroot\favicon.ico.br
 C:\GIT\familienfest\repro\familienfest\release\wwwroot\index.html.br
 C:\GIT\familienfest\repro\familienfest\release\wwwroot\sample-data\weather.json.br
+C:\GIT\familienfest\repro\familienfest\release\wwwroot\_framework\release\web.config.br
+C:\GIT\familienfest\repro\familienfest\release\wwwroot\_framework\docs\sample-data\weather.json.br
+C:\GIT\familienfest\repro\familienfest\release\wwwroot\_framework\docs\_framework\blazor.boot.json.br
+C:\GIT\familienfest\repro\familienfest\release\wwwroot\_framework\release\wwwroot\sample-data\weather.json.br
+C:\GIT\familienfest\repro\familienfest\release\wwwroot\_framework\release\wwwroot\_framework\blazor.boot.json.br
 C:\GIT\familienfest\repro\familienfest\release\wwwroot\_framework\dotnet.timezones.blat.br
 C:\GIT\familienfest\repro\familienfest\release\wwwroot\_framework\dotnet.wasm.br
 C:\GIT\familienfest\repro\familienfest\release\wwwroot\_framework\icudt.dat.br
@@ -132,6 +142,11 @@ C:\GIT\familienfest\repro\familienfest\release\wwwroot\css\open-iconic\README.md
 C:\GIT\familienfest\repro\familienfest\release\wwwroot\favicon.ico.gz
 C:\GIT\familienfest\repro\familienfest\release\wwwroot\index.html.gz
 C:\GIT\familienfest\repro\familienfest\release\wwwroot\sample-data\weather.json.gz
+C:\GIT\familienfest\repro\familienfest\release\wwwroot\_framework\release\web.config.gz
+C:\GIT\familienfest\repro\familienfest\release\wwwroot\_framework\docs\sample-data\weather.json.gz
+C:\GIT\familienfest\repro\familienfest\release\wwwroot\_framework\docs\_framework\blazor.boot.json.gz
+C:\GIT\familienfest\repro\familienfest\release\wwwroot\_framework\release\wwwroot\sample-data\weather.json.gz
+C:\GIT\familienfest\repro\familienfest\release\wwwroot\_framework\release\wwwroot\_framework\blazor.boot.json.gz
 C:\GIT\familienfest\repro\familienfest\release\wwwroot\_framework\dotnet.timezones.blat.gz
 C:\GIT\familienfest\repro\familienfest\release\wwwroot\_framework\dotnet.wasm.gz
 C:\GIT\familienfest\repro\familienfest\release\wwwroot\_framework\icudt.dat.gz
