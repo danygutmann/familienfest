@@ -91,13 +91,23 @@ using familienfest.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 9 "C:\GIT\familienfest\repro\familienfest\Pages\Counter.razor"
+#line 14 "C:\GIT\familienfest\repro\familienfest\Pages\Counter.razor"
        
-    private int currentCount = 0;
-
-    private void IncrementCount()
+    protected override void OnInitialized()
     {
-        currentCount++;
+        familienfest.Controller.Counter._instance.PropertyChanged += (o, e) => StateHasChanged();
+    }
+    void IncrementCount()
+    {
+        familienfest.Controller.Counter._instance.CountUp();
+    }
+    void DecreaseCount()
+    {
+        familienfest.Controller.Counter._instance.CountDown();
+    }
+    void StartCountdown()
+    {
+        familienfest.Controller.Counter._instance.CountToZero();
     }
 
 #line default

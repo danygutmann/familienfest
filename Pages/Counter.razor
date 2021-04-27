@@ -2,15 +2,30 @@
 
 <h1>Counter</h1>
 
-<p>Current count: @currentCount</p>
+<p>Current count: @familienfest.Controller.Counter._instance.Count</p>
 
-<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+<button class="btn btn-primary" @onclick="IncrementCount">Count up once</button>
+<br />
+<button class="btn btn-primary" @onclick="DecreaseCount">Count down once</button>
+<br />
+<button class="btn btn-primary" @onclick="StartCountdown">Count to 0</button>
+<br />
 
 @code {
-    private int currentCount = 0;
-
-    private void IncrementCount()
+    protected override void OnInitialized()
     {
-        currentCount++;
+        familienfest.Controller.Counter._instance.PropertyChanged += (o, e) => StateHasChanged();
+    }
+    void IncrementCount()
+    {
+        familienfest.Controller.Counter._instance.CountUp();
+    }
+    void DecreaseCount()
+    {
+        familienfest.Controller.Counter._instance.CountDown();
+    }
+    void StartCountdown()
+    {
+        familienfest.Controller.Counter._instance.CountToZero();
     }
 }
