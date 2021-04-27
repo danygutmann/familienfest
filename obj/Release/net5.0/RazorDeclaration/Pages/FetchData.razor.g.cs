@@ -91,13 +91,13 @@ using familienfest.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 37 "C:\GIT\familienfest\repro\familienfest\Pages\FetchData.razor"
+#line 36 "C:\GIT\familienfest\repro\familienfest\Pages\FetchData.razor"
        
-    private WeatherForecast[] forecasts;
+    private Zutat[] forecasts;
 
     protected override async Task OnInitializedAsync()
     {
-        forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("sample-data/weather.json");
+        forecasts = await Http.GetFromJsonAsync<Zutat[]>("http://134.255.218.18:1880/API/cb/Zutaten/get");
     }
 
     public class WeatherForecast
@@ -109,6 +109,13 @@ using familienfest.Shared;
         public string Summary { get; set; }
 
         public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+    }
+
+    public class Zutat
+    {
+        public int id { get; set; }
+        public string name { get; set; }
+        public int einheit { get; set; }
     }
 
 #line default
