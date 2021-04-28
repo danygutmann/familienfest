@@ -97,7 +97,7 @@ using BlazorStrap;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 29 "C:\GIT\familienfest\repro\familienfest\Shared\MainLayout.razor"
+#line 34 "C:\GIT\familienfest\repro\familienfest\Shared\MainLayout.razor"
        
     private BSCollapse NavbarCollapse;
     private FormsModel formsModel = new FormsModel();

@@ -1,22 +1,27 @@
 @inherits LayoutComponentBase
 
-<div class="page">
 
+
+<div class="page">
     <div class="sidebar">
-            <NavMenu />
-        </div>
+        <NavMenu />
+    </div>
 
     <div class="main">
         <div class="top-row px-4">
+            
+
             <BSDropdown>
                 <BSDropdownToggle>username</BSDropdownToggle>
                 <BSDropdownMenu>
                     <BSDropdownItem Href="javascript:void(0);">Action</BSDropdownItem>
                     <BSDropdownItem Href="javascript:void(0);">Another Action</BSDropdownItem>
-                    <BSDropdownItem IsDivider="true"/>
+                    <BSDropdownItem IsDivider="true" />
                     <BSDropdownItem Href="javascript:void(0);">Logout</BSDropdownItem>
                 </BSDropdownMenu>
             </BSDropdown>
+
+
         </div>
 
         <div class="content px-4">
