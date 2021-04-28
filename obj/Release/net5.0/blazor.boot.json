@@ -7,6 +7,8 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
+      "BlazorComponentUtilities.dll": "sha256-9VqqASjMRw8LX9vNXRKXBE+XlDpUfTeuo4+CPgg1fQE=",
+      "BlazorStrap.dll": "sha256-yzh2G3lrgLb7WJqEkT1NGDbWaB77igL+F+vfYffvlIs=",
       "Microsoft.AspNetCore.Authorization.dll": "sha256-fRsos6COcWE1mv16iL1oDlrTVo0CyzWlANOV3GVPteM=",
       "Microsoft.AspNetCore.Components.dll": "sha256-fRGuHi4QM9T4jlY+wZqfSulM4Eok2jLzIYGAet4sIok=",
       "Microsoft.AspNetCore.Components.Forms.dll": "sha256-VUylFBr1e5Fa+IE1BebNrQhZSNQaweOyVi12K0HI4l4=",
@@ -195,11 +197,11 @@
       "mscorlib.dll": "sha256-aRw41w\/QxOqc3NzhbK7UKf1zT6z\/oHtp9BlXl4JWwjM=",
       "netstandard.dll": "sha256-stWPH7tpmfc4JFroiKGKWcPfLQ+ALD6yQUXA9NiV0fQ=",
       "System.Private.CoreLib.dll": "sha256-PbMTdb+kswRpFmuD8S4hY70nkZ9LeYJg7y3wm7hj0CQ=",
-      "familienfest.dll": "sha256-cfBNrxG55e4dv\/yxIy7Pu5R2TgemNeX2lhkIv9uYj9M="
+      "familienfest.dll": "sha256-PpGbkl9btL2Qy4Si7EMA0ZXpMhJQGhrT7OOZkaLPM3M="
     },
     "lazyAssembly": null,
     "pdb": {
-      "familienfest.pdb": "sha256-\/Xi1pSxzAHu9EjD5UK18MCfkV3YA+kKHkqLYR1kkjZc="
+      "familienfest.pdb": "sha256-Qqkvbzp7DiAxBp3t5L4qjZubpehow1F6yR6q7p4JwYk="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-SQvzbzBfueaAxSKIKE1khBH02NH2MJJaWDBav\/S5MSs=",

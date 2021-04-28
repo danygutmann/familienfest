@@ -79,6 +79,13 @@ using familienfest.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 11 "C:\GIT\familienfest\repro\familienfest\_Imports.razor"
+using BlazorStrap;
+
+#line default
+#line hidden
+#nullable disable
     public partial class SurveyPrompt : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998

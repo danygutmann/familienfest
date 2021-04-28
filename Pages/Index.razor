@@ -1,7 +1,12 @@
 ﻿@page "/"
 
-<h1>Hello, world!</h1>
+<BSAlert Color="Color.Primary">
+    This is a primary BSAlert — check it out!
+</BSAlert>
 
-Welcome to your new app.
-
-<SurveyPrompt Title="How is Blazor working for you?" />
+<BSToast IsVisible="true">
+    <BSToastHeader>I am Heading</BSToastHeader>
+    <BSToastBody>
+        <p>Test me</p>
+    </BSToastBody>
+</BSToast>

@@ -82,6 +82,13 @@ using familienfest.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 11 "C:\GIT\familienfest\repro\familienfest\_Imports.razor"
+using BlazorStrap;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/counter")]
     public partial class Counter : Microsoft.AspNetCore.Components.ComponentBase
     {

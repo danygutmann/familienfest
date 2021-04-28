@@ -630,3 +630,9 @@ C:\GIT\familienfest\repro\familienfest\obj\Release\net5.0\familienfest.csproj.Co
 C:\GIT\familienfest\repro\familienfest\obj\Release\net5.0\familienfest.dll
 C:\GIT\familienfest\repro\familienfest\obj\Release\net5.0\ref\familienfest.dll
 C:\GIT\familienfest\repro\familienfest\obj\Release\net5.0\familienfest.pdb
+C:\GIT\familienfest\repro\familienfest\bin\Release\net5.0\wwwroot\_framework\BlazorComponentUtilities.dll.gz
+C:\GIT\familienfest\repro\familienfest\bin\Release\net5.0\wwwroot\_framework\BlazorStrap.dll.gz
+C:\GIT\familienfest\repro\familienfest\bin\Release\net5.0\wwwroot\_framework\BlazorComponentUtilities.dll
+C:\GIT\familienfest\repro\familienfest\bin\Release\net5.0\wwwroot\_framework\BlazorStrap.dll
+C:\GIT\familienfest\repro\familienfest\obj\Release\net5.0\build-gz\VgUNrueP.gz
+C:\GIT\familienfest\repro\familienfest\obj\Release\net5.0\build-gz\Vk3sjGbq.gz

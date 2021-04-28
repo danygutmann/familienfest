@@ -82,6 +82,13 @@ using familienfest.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 11 "C:\GIT\familienfest\repro\familienfest\_Imports.razor"
+using BlazorStrap;
+
+#line default
+#line hidden
+#nullable disable
     public partial class MainLayout : LayoutComponentBase
     {
         #pragma warning disable 1998
@@ -89,6 +96,37 @@ using familienfest.Shared;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 24 "C:\GIT\familienfest\repro\familienfest\Shared\MainLayout.razor"
+       
+    private BSCollapse NavbarCollapse;
+    private FormsModel formsModel = new FormsModel();
+    bool UserControlledIsOpen { get; set; } = true;
+    void onclick(MouseEventArgs e)
+    {
+        NavbarCollapse.Toggle();
+        Console.WriteLine("Navbar State->" + NavbarCollapse.IsOpen.ToString());
+    }
+    void OpenChanged(bool e)
+    {
+        Console.WriteLine("OpenChanged->" + e.ToString());
+    }
+
+    void UserControlledClick(MouseEventArgs e)
+    {
+        UserControlledIsOpen = !UserControlledIsOpen;
+        StateHasChanged();
+
+    }
+
+    public class FormsModel
+    {
+        public string Blank { get; set; }
+    }
+
+#line default
+#line hidden
+#nullable disable
     }
 }
 #pragma warning restore 1591

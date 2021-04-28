@@ -2,7 +2,6 @@
 @inject HttpClient Http
 
 <h1>Weather forecast</h1>
-
 <p>This component demonstrates fetching data from the server.</p>
 
 @if (forecasts == null)
@@ -11,6 +10,7 @@
 }
 else
 {
+
     <table class="table">
         <thead>
             <tr>
@@ -23,11 +23,10 @@ else
         <tbody>
             @foreach (var forecast in forecasts)
             {
-            <tr>
-                <td>@forecast.id</td>
-                <td>@forecast.name</td>
-                <td>@forecast.einheit</td>
-            </tr>
+                <tr>
+                    <td>@forecast.Id</td>
+                    <td>@forecast.Name</td>
+                </tr>
             }
         </tbody>
     </table>
@@ -38,24 +37,25 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        forecasts = await Http.GetFromJsonAsync<Zutat[]>("http://134.255.218.18:1880/API/cb/Zutaten/get");
-    }
+        try
+        {
+            familienfest.Controller.Data._instance.GetData();
 
-    public class WeatherForecast
-    {
-        public DateTime Date { get; set; }
 
-        public int TemperatureC { get; set; }
+            //Http.BaseAddress = new Uri("http://hikawstrace01:1880/");
+            var response = await Http.GetStringAsync("cb/Einheiten/get");
 
-        public string Summary { get; set; }
-
-        public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+            //forecasts = await Http.GetFromJsonAsync<Zutat[]>(url);
+        }
+        catch (Exception ex)
+        {
+            int zz = ex.Message.Length;
+        }
     }
 
     public class Zutat
     {
-        public int id { get; set; }
-        public string name { get; set; }
-        public int einheit { get; set; }
+        public int Id { get; set; }
+        public string Name { get; set; }
     }
 }
