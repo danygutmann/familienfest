@@ -7,4 +7,4 @@ BlazorReplaceRoot.exe "C:\GIT\familienfest\repro\familienfest\docs\index.html" "
 
 git.exe add .
 git.exe commit -am "made changes"
-git.exe push
+

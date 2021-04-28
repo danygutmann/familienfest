@@ -106,29 +106,28 @@ using BlazorStrap;
     {
         try
         {
-            familienfest.Controller.Data._instance.GetData();
-
-
-            //Http.BaseAddress = new Uri("http://hikawstrace01:1880/");
-            var response = await Http.GetStringAsync("cb/Einheiten/get");
-
-            //forecasts = await Http.GetFromJsonAsync<Zutat[]>(url);
+            var client = ClientFactory.CreateClient("ServerAPI");
+            
+            forecasts = await client.GetFromJsonAsync<Zutat[]>("api/location/44418/2013/4/27/");
         }
         catch (Exception ex)
         {
             int zz = ex.Message.Length;
         }
+
+
     }
 
     public class Zutat
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
+        public int id { get; set; }
+        public string weather_state_name { get; set; }
     }
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IHttpClientFactory ClientFactory { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient Http { get; set; }
     }
 }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "yruGrmCGIZdCN8yw9OIEWD7iuJST7dehMIMmdGPK9wefm/HUitu32xxvMCwm8VhHTE2MveKSNmfgf7hXa+EmcA==",
+  "dgSpecHash": "zH00azW3CkVNr93cEZHd1WGLSTK+zq+yeb/glamjgMkLWUcnetmUPLoQF66cW4wYS3Qcl8ML77fRPXT82A/6xg==",
   "success": true,
   "projectFilePath": "C:\\GIT\\familienfest\\repro\\familienfest\\familienfest.csproj",
   "expectedPackageFiles": [
@@ -24,6 +24,7 @@
     "C:\\Users\\dgutmann\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\5.0.0\\microsoft.extensions.fileproviders.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\dgutmann\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\5.0.0\\microsoft.extensions.fileproviders.physical.5.0.0.nupkg.sha512",
     "C:\\Users\\dgutmann\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\5.0.0\\microsoft.extensions.filesystemglobbing.5.0.0.nupkg.sha512",
+    "C:\\Users\\dgutmann\\.nuget\\packages\\microsoft.extensions.http\\5.0.0\\microsoft.extensions.http.5.0.0.nupkg.sha512",
     "C:\\Users\\dgutmann\\.nuget\\packages\\microsoft.extensions.logging\\5.0.0\\microsoft.extensions.logging.5.0.0.nupkg.sha512",
     "C:\\Users\\dgutmann\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\dgutmann\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",

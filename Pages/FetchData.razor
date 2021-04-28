@@ -1,5 +1,6 @@
 ﻿@page "/fetchdata"
 @inject HttpClient Http
+@inject IHttpClientFactory ClientFactory
 
 <h1>Weather forecast</h1>
 <p>This component demonstrates fetching data from the server.</p>
@@ -10,7 +11,6 @@
 }
 else
 {
-
     <table class="table">
         <thead>
             <tr>
@@ -24,8 +24,8 @@ else
             @foreach (var forecast in forecasts)
             {
                 <tr>
-                    <td>@forecast.Id</td>
-                    <td>@forecast.Name</td>
+                    <td>@forecast.id</td>
+                    <td>@forecast.weather_state_name</td>
                 </tr>
             }
         </tbody>
@@ -39,23 +39,21 @@ else
     {
         try
         {
-            familienfest.Controller.Data._instance.GetData();
-
-
-            //Http.BaseAddress = new Uri("http://hikawstrace01:1880/");
-            var response = await Http.GetStringAsync("cb/Einheiten/get");
-
-            //forecasts = await Http.GetFromJsonAsync<Zutat[]>(url);
+            var client = ClientFactory.CreateClient("ServerAPI");
+            
+            forecasts = await client.GetFromJsonAsync<Zutat[]>("api/location/44418/2013/4/27/");
         }
         catch (Exception ex)
         {
             int zz = ex.Message.Length;
         }
+
+
     }
 
     public class Zutat
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
+        public int id { get; set; }
+        public string weather_state_name { get; set; }
     }
 }
