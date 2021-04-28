@@ -98,7 +98,7 @@ using BlazorStrap;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 14 "C:\GIT\familienfest\repro\familienfest\Pages\Counter.razor"
+#line 16 "C:\GIT\familienfest\repro\familienfest\Pages\Counter.razor"
        
     protected override void OnInitialized()
     {

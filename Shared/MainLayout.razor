@@ -2,17 +2,22 @@
 
 <div class="page">
 
-
-
-
     <div class="sidebar">
             <NavMenu />
         </div>
 
     <div class="main">
         <div class="top-row px-4">
-                <a href="http://blazor.net" target="_blank" class="ml-md-auto">About</a>
-            </div>
+            <BSDropdown>
+                <BSDropdownToggle>username</BSDropdownToggle>
+                <BSDropdownMenu>
+                    <BSDropdownItem Href="javascript:void(0);">Action</BSDropdownItem>
+                    <BSDropdownItem Href="javascript:void(0);">Another Action</BSDropdownItem>
+                    <BSDropdownItem IsDivider="true"/>
+                    <BSDropdownItem Href="javascript:void(0);">Logout</BSDropdownItem>
+                </BSDropdownMenu>
+            </BSDropdown>
+        </div>
 
         <div class="content px-4">
             @Body

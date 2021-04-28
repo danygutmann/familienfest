@@ -2,14 +2,16 @@
 
 <h1>Counter</h1>
 
-<p>Current count: @familienfest.Controller.Counter._instance.Count</p>
+<BSAlert Color="Color.Primary">
+    Current count: @familienfest.Controller.Counter._instance.Count
+</BSAlert>
 
-<button class="btn btn-primary" @onclick="IncrementCount">Count up once</button>
-<br />
-<button class="btn btn-primary" @onclick="DecreaseCount">Count down once</button>
-<br />
-<button class="btn btn-primary" @onclick="StartCountdown">Count to 0</button>
-<br />
+<BSListGroup ListGroupType="ListGroupType.Link">
+    <BSListGroupItem ListGroupType="ListGroupType.Link" Href="#" IsActive="true">Counter Options</BSListGroupItem>
+    <BSListGroupItem ListGroupType="ListGroupType.Link" Href="#" @onclick="IncrementCount">Count up once</BSListGroupItem>
+    <BSListGroupItem ListGroupType="ListGroupType.Link" Href="#" @onclick="DecreaseCount">Count down once</BSListGroupItem>
+    <BSListGroupItem ListGroupType="ListGroupType.Link" Href="#" @onclick="StartCountdown">Count to 0</BSListGroupItem>
+</BSListGroup>
 
 @code {
     protected override void OnInitialized()
