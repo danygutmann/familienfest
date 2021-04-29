@@ -5,6 +5,6 @@ xcopy "C:\GIT\familienfest\repro\familienfest\release\wwwroot" "C:\GIT\familienf
 
 BlazorReplaceRoot.exe "C:\GIT\familienfest\repro\familienfest\docs\index.html" "familienfest"
 
-git.exe add .
-git.exe commit -am "made changes"
+;git.exe add .
+;git.exe commit -am "commit"
 
