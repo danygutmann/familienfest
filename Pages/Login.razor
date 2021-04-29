@@ -1,0 +1,47 @@
+@page "/Account/LogIn"
+@inject NavigationManager NavigationManager
+
+<h3>Anmelden</h3>
+
+<EditForm Model="@login" OnValidSubmit="@HandleValidSubmit">
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="inputEmail4">Email</label>
+            <InputText @bind-Value="login.Email" class="form-control" />
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="inputPassword4">Passwort</label>
+            <InputText @bind-Value="login.Pass" class="form-control" type="password" />
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="form-check">
+            <InputCheckbox @bind-Value="login.StayLogin" class="form-check-input" />
+            <label class="form-check-label" for="gridCheck">Angemeldet bleiben</label>
+        </div>
+    </div>
+    <button class="btn btn-primary">anmelden @familienfest.Controller.Session.Instance.UserLoggedIn</button>
+
+    <div class="form-group">
+        <a href="/Account/Register">oder neu registrieren</a>
+    </div>
+</EditForm>
+
+
+@code {
+
+    private familienfest.Models.Login login = new familienfest.Models.Login();
+
+    protected override void OnInitialized()
+    {
+        familienfest.Controller.Session.Instance.PropertyChanged += (o, e) => StateHasChanged();
+    }
+
+    private void HandleValidSubmit()
+    {
+        familienfest.Controller.Session.Instance.TryLogin(login);
+        NavigationManager.NavigateTo("");
+    }
+}

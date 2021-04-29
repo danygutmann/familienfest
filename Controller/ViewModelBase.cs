@@ -82,14 +82,20 @@ namespace familienfest.Controller
                 // check if there was a change
                 if (!EqualityComparer<T>.Default.Equals((T)propertyValues[propertyName], value))
                 {
+                    Console.WriteLine($"{propertyName} has changed to {value}");
                     propertyValues[propertyName] = value;
                     OnPropertyChanged(propertyName);
+                    //PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+
                     if (alsoInform != null)
                     {
                         foreach (string toInform in alsoInform)
                         {
                             if (!string.IsNullOrEmpty(toInform))
+                            {
                                 OnPropertyChanged(toInform);
+                                //PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(toInform));
+                            }
                         }
                     }
                     return true;
@@ -101,6 +107,7 @@ namespace familienfest.Controller
                 // set new "private"
                 propertyValues.Add(propertyName, value);
                 OnPropertyChanged(propertyName);
+                //PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
                 return true;
             }
         }

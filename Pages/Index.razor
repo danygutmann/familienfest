@@ -1,12 +1,19 @@
 ﻿@page "/"
 
-<BSAlert Color="Color.Primary">
-    This is a primary BSAlert — check it out!
-</BSAlert>
+<div class="jumbotron">
+    @if (familienfest.Controller.Session.Instance.UserLoggedIn)
+    {
+        <h2 class="display-4">Hallo, @familienfest.Controller.Session.Instance.CurrentUser.Vorname!</h2>
+    }
+    else
+    {
+        <h2 class="display-4">Hallo, Welt!</h2>
+    }
 
-<BSToast IsVisible="true">
-    <BSToastHeader>I am Heading</BSToastHeader>
-    <BSToastBody>
-        <p>Test me</p>
-    </BSToastBody>
-</BSToast>
+    <p class="lead">bla bla bla.</p>
+    <hr class="my-4">
+    <p>noch mehr bla</p>
+    <p class="lead">
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    </p>
+</div>

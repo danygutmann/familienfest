@@ -1,0 +1,41 @@
+@page "/Kontakt"
+
+<h2>Kontakt</h2>
+
+<form>
+
+    <div class="form-group">
+        <label for="exampleFormControlInput1">Betreff</label>
+        <input type="text" class="form-control" id="Betreff" placeholder="Betreff">
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1">Meine Nachricht</label>
+        <textarea class="form-control" id="Nachricht" rows="4"></textarea>
+    </div>
+    @if (familienfest.Controller.Session.Instance.UserLoggedIn)
+    {
+    }
+    else
+    {
+        <div class="form-row">
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Dein Name</label>
+                <input type="text" class="form-control" id="Name" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Deine Email</label>
+                <input type="email" class="form-control" id="Email" placeholder="name@example.com">
+            </div>
+        </div>
+    }
+    <button type="submit" class="btn btn-primary">Nachricht Absenden</button>
+</form>
+
+
+@code {
+
+    void TryLogIn()
+    {
+
+    }
+}

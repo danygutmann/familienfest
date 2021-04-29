@@ -1,31 +1,37 @@
 @inherits LayoutComponentBase
-
+@inject NavigationManager NavigationManager
 
 
 <div class="page">
     @*<div class="sidebar">
-        <NavMenu />
-    </div>*@
+            <NavMenu />
+        </div>*@
 
     <div class="main">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="">Home</a>
+                        <a class="nav-link" href="">Startseite</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="counter">Counter</a>
+                        <a class="nav-link" href="/Teilnehmen">Teilnehmen</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="fetchdata">Daten</a>
+                        <a class="nav-link" href="/Mitbringen">Mitbringen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Mitmachen">Mitmachen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Kontakt">Kontakt</a>
                     </li>
                     @*<li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>*@
+                            <a class="nav-link" href="counter">Counter</a>
+                        </li>*@
+                    @*<li class="nav-item">
+                            <a class="nav-link" href="fetchdata">Daten</a>
+                        </li>*@
                 </ul>
             </div>
             <div class="mx-auto order-0">
@@ -36,23 +42,15 @@
             </div>
             <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Right</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <BSDropdown>
-                            <BSDropdownToggle>Dropdown</BSDropdownToggle>
-                            <BSDropdownMenu Right="true">
-                                <BSDropdownItem Href="javascript:void(0);">Action</BSDropdownItem>
-                                <BSDropdownItem Href="javascript:void(0);">Another Action</BSDropdownItem>
-                                <BSDropdownItem IsDivider ="true"/>
-                                <BSDropdownItem Href="javascript:void(0);">Yet Another Action</BSDropdownItem>
-                            </BSDropdownMenu>
-                        </BSDropdown>
-                    </li>
+                    @if (familienfest.Controller.Session.Instance.UserLoggedIn)
+                    {
+                        <li><a class="nav-link" href="/Account/UserProfile">Meine Daten</a></li>
+                        <li><a class="nav-link" @onclick="LogOut">Log out</a></li>
+                    }
+                    else
+                    {
+                        <li><a class="nav-link" href="/Account/LogIn">Anmelden</a></li>
+                    }
                 </ul>
             </div>
         </nav>
@@ -82,6 +80,12 @@
         UserControlledIsOpen = !UserControlledIsOpen;
         StateHasChanged();
 
+    }
+
+    void LogOut()
+    {
+        familienfest.Controller.Session.Instance.TryLogout();
+        NavigationManager.NavigateTo("");
     }
 
     public class FormsModel

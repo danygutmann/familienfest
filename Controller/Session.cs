@@ -1,5 +1,7 @@
-﻿using System;
+﻿using familienfest.Models;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -8,75 +10,40 @@ namespace familienfest.Controller
     public class Session : ViewModelBase
     {
         public static readonly Session Instance = new Session();
-        //public NavigationManager MyNavigationManager { get; set; }
-
         Session()
         {
-            UserName = "Anonym";
+            CurrentUser = new UserData();
             UserLoggedIn = false;
         }
 
-        public T GetUriParam<T>(string name)
+        public UserData CurrentUser
         {
-            var result = default(T);
-            //MyNavigationManager.TryGetQueryString<T>(name, out result);
-            return result;
-        }
-        public string UserName
-        {
-            get { return Get<string>(); }
-            set { Set(value); }
-            //get
-            //{
-            //    return GetUriParam<string>("name");
-            //}
-        }
-        public string UserImage
-        {
-            get { return Get<string>(); }
+            get { return Get<UserData>(); }
             set { Set(value); }
         }
-        public string UserEmail
-        {
-            get { return Get<string>(); }
-            set { Set(value); }
-        }
+
         public bool UserLoggedIn
         {
             get { return Get<bool>(); }
-            set { Set(value); }
+            internal set { Set(value); }
         }
 
+        public void TryLogin(Models.Login login)
+        {
+            int zz = login.Pass.Length;
+            UserLoggedIn = true;
 
-        public void TryLogin()
-        {
-            TryLogin(GetUriParam<string>("email"));
-        }
-        public void TryLogin(string email)
-        {
-            if (!string.IsNullOrEmpty(email))
-            {
-                if (email == "mail@danielgutmann.de")
-                {
-                    UserName = "Dany";
-                    UserLoggedIn = true;
-                }
-            }
-        }
-        public string Uri
-        {
-            get
-            {
-                try
-                {
-                    return null; // MyNavigationManager.Uri.ToString();
-                }
-                catch (Exception)
-                {
-                    return "";
-                }
-            }
+            CurrentUser.Vorname = "Daniel";
+            CurrentUser.Nachname = "Gutmann";
+            CurrentUser.Email = "mail@danielgutmann.de";
+            CurrentUser.Type = UserTypes.Admin;
+
         }
 
+        public void TryLogout()
+        {
+            UserLoggedIn = false;
+            CurrentUser = new UserData();
+        }
     }
 }

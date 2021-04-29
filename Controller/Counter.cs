@@ -32,10 +32,12 @@ namespace familienfest.Controller
 
         public void CountUp()
         {
+            Console.WriteLine("Count Down");
             Count++;
         }
         public void CountDown()
         {
+            Console.WriteLine("Count Up");
             Count--;
         }
 

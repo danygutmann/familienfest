@@ -52,6 +52,7 @@ C:\GIT\familienfest\repro\familienfest\release\wwwroot\_framework\System.Collect
 C:\GIT\familienfest\repro\familienfest\release\wwwroot\_framework\System.Collections.NonGeneric.dll
 C:\GIT\familienfest\repro\familienfest\release\wwwroot\_framework\System.Collections.Specialized.dll
 C:\GIT\familienfest\repro\familienfest\release\wwwroot\_framework\System.Collections.dll
+C:\GIT\familienfest\repro\familienfest\release\wwwroot\_framework\System.ComponentModel.Annotations.dll
 C:\GIT\familienfest\repro\familienfest\release\wwwroot\_framework\System.ComponentModel.Primitives.dll
 C:\GIT\familienfest\repro\familienfest\release\wwwroot\_framework\System.ComponentModel.TypeConverter.dll
 C:\GIT\familienfest\repro\familienfest\release\wwwroot\_framework\System.ComponentModel.dll
@@ -127,6 +128,7 @@ C:\GIT\familienfest\repro\familienfest\release\wwwroot\_framework\System.Collect
 C:\GIT\familienfest\repro\familienfest\release\wwwroot\_framework\System.Collections.NonGeneric.dll.br
 C:\GIT\familienfest\repro\familienfest\release\wwwroot\_framework\System.Collections.Specialized.dll.br
 C:\GIT\familienfest\repro\familienfest\release\wwwroot\_framework\System.Collections.dll.br
+C:\GIT\familienfest\repro\familienfest\release\wwwroot\_framework\System.ComponentModel.Annotations.dll.br
 C:\GIT\familienfest\repro\familienfest\release\wwwroot\_framework\System.ComponentModel.Primitives.dll.br
 C:\GIT\familienfest\repro\familienfest\release\wwwroot\_framework\System.ComponentModel.TypeConverter.dll.br
 C:\GIT\familienfest\repro\familienfest\release\wwwroot\_framework\System.ComponentModel.dll.br
@@ -201,6 +203,7 @@ C:\GIT\familienfest\repro\familienfest\release\wwwroot\_framework\System.Collect
 C:\GIT\familienfest\repro\familienfest\release\wwwroot\_framework\System.Collections.NonGeneric.dll.gz
 C:\GIT\familienfest\repro\familienfest\release\wwwroot\_framework\System.Collections.Specialized.dll.gz
 C:\GIT\familienfest\repro\familienfest\release\wwwroot\_framework\System.Collections.dll.gz
+C:\GIT\familienfest\repro\familienfest\release\wwwroot\_framework\System.ComponentModel.Annotations.dll.gz
 C:\GIT\familienfest\repro\familienfest\release\wwwroot\_framework\System.ComponentModel.Primitives.dll.gz
 C:\GIT\familienfest\repro\familienfest\release\wwwroot\_framework\System.ComponentModel.TypeConverter.dll.gz
 C:\GIT\familienfest\repro\familienfest\release\wwwroot\_framework\System.ComponentModel.dll.gz

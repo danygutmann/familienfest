@@ -1,0 +1,53 @@
+@page "/Account/UserProfile"
+
+<h3>Meine Daten</h3>
+
+<EditForm Model="@data" OnValidSubmit="@HandleValidSubmit">
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="inputEmail4">Vorname</label>
+            <InputText @bind-Value="data.Vorname" class="form-control" />
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="inputEmail4">Nachnname</label>
+            <InputText @bind-Value="data.Nachname" class="form-control" />
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="inputEmail4">Email</label>
+            <InputText @bind-Value="data.Email" class="form-control" />
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="inputPassword4">Passwort</label>
+            <InputText @bind-Value="data.Password" class="form-control" type="password" />
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="inputPassword4">Mein User Typ</label>
+            <InputText @bind-Value="data.TypeInfo" class="form-control" type="text" />
+        </div>
+    </div>
+    <button class="btn btn-primary">Meine Daten aktualisieren</button>
+</EditForm>
+
+
+@code {
+
+    private familienfest.Models.UserData data = familienfest.Controller.Session.Instance.CurrentUser;
+
+    protected override void OnInitialized()
+    {
+        data.PropertyChanged += (o, e) => StateHasChanged();
+    }
+
+    private void HandleValidSubmit()
+    {
+        data.Update();
+    }
+}

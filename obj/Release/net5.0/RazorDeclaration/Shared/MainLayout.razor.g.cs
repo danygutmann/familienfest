@@ -97,7 +97,7 @@ using BlazorStrap;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 66 "C:\GIT\familienfest\repro\familienfest\Shared\MainLayout.razor"
+#line 64 "C:\GIT\familienfest\repro\familienfest\Shared\MainLayout.razor"
        
     private BSCollapse NavbarCollapse;
     private FormsModel formsModel = new FormsModel();
@@ -119,6 +119,12 @@ using BlazorStrap;
 
     }
 
+    void LogOut()
+    {
+        familienfest.Controller.Session.Instance.TryLogout();
+        NavigationManager.NavigateTo("");
+    }
+
     public class FormsModel
     {
         public string Blank { get; set; }
@@ -127,6 +133,7 @@ using BlazorStrap;
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
     }
 }
 #pragma warning restore 1591

@@ -198,11 +198,11 @@
       "mscorlib.dll": "sha256-aRw41w\/QxOqc3NzhbK7UKf1zT6z\/oHtp9BlXl4JWwjM=",
       "netstandard.dll": "sha256-stWPH7tpmfc4JFroiKGKWcPfLQ+ALD6yQUXA9NiV0fQ=",
       "System.Private.CoreLib.dll": "sha256-PbMTdb+kswRpFmuD8S4hY70nkZ9LeYJg7y3wm7hj0CQ=",
-      "familienfest.dll": "sha256-3y8wsXUQ5VJIRCfxgVxkLhKQpr3HFtZ5zvxjlW7zYps="
+      "familienfest.dll": "sha256-fmqku8NQeaeX1UaZqNmSmqRORbEUJFdJyZKc9rC6\/Pc="
     },
     "lazyAssembly": null,
     "pdb": {
-      "familienfest.pdb": "sha256-6V0BRY+HY4pGGQ1cPICsXrWqH+S1nXw32DkWf1Qp5B4="
+      "familienfest.pdb": "sha256-d80vPGxsDXLYNikJdjZBEiuJOixHh25S68IkJV9B9Fw="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-SQvzbzBfueaAxSKIKE1khBH02NH2MJJaWDBav\/S5MSs=",
